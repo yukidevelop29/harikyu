@@ -1,0 +1,70 @@
+.faqlist {
+    width: 1000px;
+    max-width:90%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 3px #b6b6b6;
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+.faqlist summary {
+    position: relative;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    color: #337d98;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* 開閉ボタン */
+.faqlist summary::before {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    content: '+';
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #4d98b5;
+    color: white;
+}
+.faqlist[open] summary::before {
+    content: '-';
+    background-color: #888;
+}
+/* 横線 */
+.faqlist[open] summary::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 40px;
+    width: calc(92% - 40px);
+    height: 1px;
+    background-color: #ddd;
+}
+/* 本文 */
+.faqlist p {
+    transform: translateY(-10px);
+    opacity: 0;
+    margin-top: 1em;
+    padding: .3em 4em 1.5em;
+    color: #333333;
+    transition: transform .5s, opacity .5s;
+    text-indent: -1em;
+}
+.faqlist[open] p {
+    transform: none;
+    opacity: 1;
+}
+.faqlist ul {
+    padding: .3em 4em 1.5em;
+    color: #333333;
+    list-style-position: inside;
+}

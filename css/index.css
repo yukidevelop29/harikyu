@@ -1,0 +1,171 @@
+/* 身体のこと、不安なこと、なんでもご相談ください。 */
+#sec01 img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* 国家資格免許を持つ、はり・きゅう・マッサージ師が... */
+#sec02 {
+    display: flex;
+    background-color: #d0eaf4;
+}
+#sec02 img {
+    width: 40%;
+    object-fit: contain;
+}
+#sec02 .text-button-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 720px;
+    margin: 5em 5em 0 5em;
+}
+#sec02 .text-button-container .text {
+    margin: 0 auto;
+    padding: 40px 0;
+}
+#sec02 .text-button-container p {
+    color: rgb(33, 33, 33);
+    font-size: 16px;
+    line-height: 2em;
+    margin-top: 8px;
+}
+.aboutus-button {
+    text-align: right;
+    align-self: flex-end;
+    margin-bottom: 2em;
+}
+
+/* 訪問鍼灸マッサージとは */
+#sec03 {
+    background: url("../images/index/contents11.jpg");
+    background-size: cover;
+}
+#sec03 .textbox {
+    display: inline-block;
+    background-color: #cfeaf3a6;
+    color: rgb(43, 43, 43);
+    margin: 70px 0;
+    padding: 20px 60px 40px 60px;
+    max-width: 90%;
+    font-size: 16px;
+}
+#sec03 .textbox h1 {
+    display: inline-block;
+    color: white;
+    background-color: #4d98b5;
+    margin: 30px 0 30px 0;
+    padding: 0 20px 0 20px;
+}
+#sec03 .textbox p {
+    line-height: 2rem;
+    text-align: left;
+}
+#sec03 .textbox .annotation {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* 鍼灸マッサージ治療の主な効果 */
+.efficacy {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.efficacy .square {
+    width: 35%;
+    height: auto;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px 3px #b6b6b6;
+}
+.efficacy img {
+    width: 90%;
+    height: auto;
+    transform: translate(5.5%, 10%);
+    object-fit: cover;
+}
+.efficacy h2 {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    color: #337d98;
+    text-decoration: underline solid #337d98;
+    text-underline-offset: 6px;
+    margin-top: 30px;
+}
+.efficacy .text {
+    padding: 20px 10% 20px;
+}
+
+/* 選べる訪問施術と院内施術 */
+.can-choose {
+    text-align: center;
+}
+.can-choose .square {
+    display: inline-block;
+    width: 72%;
+    height: auto;
+    background-color: #cfeaf3;
+    border: 1px solid #337d98;
+}
+.can-choose .heading {
+    color: white;
+    background-color: #337d98;
+    padding: 6px 6px;
+}
+.can-choose .in-square {
+    display: flex;
+    gap: 30px;
+    text-align: left;
+}
+.can-choose .in-square img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+.can-choose .in-square ul {
+    list-style-position: inside;
+}
+.can-choose .in-square .text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+.can-choose .in-square address {
+    font-style: normal;
+}
+@media screen and (max-width: 768px) {
+    #sec02 {
+        flex-direction: column;
+    }
+    #sec02 img {
+        width: 100%;
+    }
+    #sec02 .text-button-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .aboutus-button {
+        margin-right: 5px;
+    }
+    .efficacy {
+        flex-direction: column;
+    }
+    .efficacy .square {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .can-choose .in-square {
+        display: flex;
+        flex-direction: column;
+    }
+    .can-choose .in-square img {
+        width: 100%;
+    }
+    .can-choose .in-square .text {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+}

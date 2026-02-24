@@ -1,0 +1,103 @@
+.recruitment-content .massage-image {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 400px;
+    object-fit: cover;
+}
+.recruitment-content .message-container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 -5px 10px 0px #b6b6b6, 0 5px 10px 0px #b6b6b6;
+    border-radius: 30px;
+    padding: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 12rem;
+}
+.recruitment-content .main-text {
+    text-align: center;
+    line-height: 1.9rem;
+}
+/* あなたに合った働き方ができます */
+.recruitment-content .suit-you-leaf-container {
+    text-align: center;
+}
+.recruitment-content .suit-you {
+    display: inline-block;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 24px;
+    font-weight: 500;
+    color: #337d98;
+    background-image: url("../images/common/icon25.png");
+    background-position: center;
+    background-size: contain;
+}
+.recruitment-content .leaf-icon {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    right: 30px;
+    width: 4rem;
+    height: auto;
+}
+.recruitment-content ul {
+    width: 350px;
+    margin: 0 auto;
+    line-height: 1.9rem;
+    list-style: url("../images/common/icon30.png");
+}
+.recruitment-content ul {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #4cb57b;
+    text-underline-offset: 10px;
+}
+.recruitment-content .acupuncture-illust {
+    position: absolute;
+    background-size: contain;
+    width: 180px;
+    height: 240px;
+    right: 2vw;
+    bottom: 10px;
+}
+/* 私たちと一緒に働きませんか？... */
+.recruitment-content .last-message {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #337d98;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+}
+
+/* お問合せ
+--------------------------------------- */
+
+@media screen and (max-width: 1100px) {
+    .recruitment-content .massage-image {
+        width: 100vw;
+    }
+    .recruitment-content .message-container {
+        width: 80vw;
+    }
+    .recruitment-content .acupuncture-illust-parent {
+        text-align: right;
+    }
+    .recruitment-content .acupuncture-illust {
+        position: relative;
+    }
+}
+@media screen and (max-width: 774px) {
+    .recruitment-content .leaf-icon {
+        top: -10px;
+        right: 0;
+    }
+}

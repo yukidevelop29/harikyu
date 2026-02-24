@@ -1,0 +1,22 @@
+#sec02 {
+    text-align: center;
+    border-top: 2px solid #337d98;
+    border-bottom: 2px solid #337d98;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #337d98;
+    line-height: 1.9rem;
+}
+.inquiry-content .tel-number {
+    text-align: center;
+    font-style: normal;
+    font-size: 40px;
+    color: #337d98;
+}
+.inquiry-content .reception-hours {
+    text-align: center;
+    font-style: normal;
+    font-size: 28px;
+    color: #337d98;
+    margin-bottom: 5rem;
+}

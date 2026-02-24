@@ -1,0 +1,150 @@
+.infomation-services-bg-image {
+    background-image: url("../images/services/contents06.jpg");
+    height: 500px;
+}
+.infomation-services-bg-white {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    transform: translateY(6rem);
+    min-height: 20rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 -5px 10px 0px #b6b6b6, 0 5px 10px 0px #b6b6b6;
+}
+.infomation-services-bg-image h1 {
+    display: inline-block;
+    font-size: 38px;
+    font-weight: bold;
+    color: #337d98;
+    border-bottom: 3px solid #337d98;
+}
+.infomation-services-bg-image p {
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+/* 高齢者出張三療サービスについて */
+/* テーブル（利用者負担・ガルヒ市役所への申請に必要な書類） */
+.user-burden-table {
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 62%;
+    text-align: center;
+}
+.user-burden-table tr, .application-documents-table tr {
+    height: 3rem;
+    font-size: clamp(0.875rem, calc(0.591rem + 1.42vw), 1.5rem);
+}
+.user-burden-table th, .application-documents-table th {
+    background: #75bbd5;
+    color: white;
+    text-align: center;
+    border: 1px solid #23596b;
+}
+.user-burden-table td, .application-documents-table td {
+    border: 1px solid #23596b;
+}
+.user-burden-table .cell-type1, .application-documents-table .cell-type1 {
+    background-color: #b5dfef;
+    color: #23596b;;
+}
+.user-burden-table .cell-type2 {
+    height: 6rem;
+    font-size: clamp(1.688rem, calc(1.392rem + 1.48vw), 2.5rem);
+    color: #46a471;
+    background-color: white;
+}
+/* 実施回数・・・年6回以内 */
+.user-burden-supplement1 {
+    color: #337d98;
+    font-size: 26px;
+    margin-top: 1rem;
+    margin-left: 19%;
+}
+/* ※2ヶ月毎に1回の割合のため、... */
+.user-burden-supplement2 {
+    margin-left: 19%;
+    margin-right: 19%;
+}
+/* 対象となる方 */
+.target img {
+    float: left;
+    margin-left: 19%;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+}
+/* 見出し1（対象となる方・申請について） */
+#services .header1 {
+    display: flex;
+    border-left: 12px solid #337d98;
+    border-bottom: 1px solid #337d98;
+    margin-right: 19%;
+    margin-left: 19%;
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+    padding-bottom: 0.3rem;
+    color :#337d98;
+    font-size: 28px;
+}
+/* 見出し2（本人・家族介護高齢者） */
+#services .header2 {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 19%;
+    margin-left: 19%;
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+    background-color: #75bbd5;
+    color: white;
+    font-size: 24px;
+}
+.target .himself ul, .target .family ul {
+    list-style-position: inside;
+    line-height: 2em;
+    padding-right: 19%;
+    padding-left: 19%;
+}
+.target p {
+    padding-right: 19%;
+    padding-left: 19%;
+}
+/* ガルヒ市役所への申請に必要な書類テーブル */
+.application-documents-table {
+    clear: both;
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 62%;
+    text-align: center;
+    margin-top: 20px;
+}
+.application-documents-table .cell-type2 {
+    height: 6rem;
+    font-size: clamp(1rem, calc(0.682rem + 1.59vw), 1.875rem);
+    color: #46a471;
+    background-color: white;
+}
+/* 申請について */
+.about-application h1 {
+    border-left: 12px solid #337d98;
+    border-bottom: 1px solid #337d98;
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+    padding-bottom: 0.3rem;
+    color :#337d98;
+    font-size: 28px;
+}
+.about-application p {
+    margin-left: 19%;
+    margin-right: 19%;
+}
+@media screen and (max-width: 1400px) {
+    .target img {
+        float: none;
+        width: 62%;
+        text-align: center;
+    }
+}

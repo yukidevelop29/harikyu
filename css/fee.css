@@ -1,0 +1,122 @@
+/* 自費での施術 */
+.self-pay {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.self-pay div {
+    width: 30%;
+}
+.self-pay-table {
+    border-collapse: collapse;  /* 一重線にする */
+    width: 100%;
+    table-layout: fixed;
+    caption-side: bottom;
+}
+.self-pay-table caption {
+    text-align: left;
+}
+.self-pay-table tr {
+    height: 40px;
+}
+.self-pay-table th {
+    background: #75bbd5;
+    color: white;
+    text-align: center;
+    border: 1px solid #cfeaf3;
+}
+.self-pay-table td {
+    border: 1px solid #cfeaf3;
+    padding-left: 10px;
+}
+.self-pay-table td:first-child {
+    background-color: #b5dfef;
+}
+.self-pay-table td:not(first-child) {
+    background-color: white;
+}
+/* 健康保険診療での施術 */
+/* はりきゅう・マッサージ療養費 負担額テーブル */
+.health-insurance-text {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 19%;
+    padding-right: 19%;
+}
+.health-insurance-table-parent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.health-insurance-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 62%;
+}
+.health-insurance-table tr {
+    height: 40px;
+}
+.health-insurance-table tr:nth-child(2) td {
+    background-color: #b5dfef;
+    height: 60px;
+}
+.health-insurance-table tr:not(:nth-child(2)) td {
+    background-color: white;
+    height: 60px;
+}
+.health-insurance-table th {
+    background: #75bbd5;
+    color: white;
+    text-align: center;
+    border: 1px solid #cfeaf3;
+}
+.health-insurance-table td {
+    border: 1px solid #cfeaf3;
+}
+/* 負担金の条件テーブル */
+.terms-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 62%;
+}
+.terms-table tr {
+    height: 60px;
+}
+.terms-table td {
+    border: 1px solid #cfeaf3;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.terms-table td:first-child {
+    background-color: #b5dfef;
+    width: 40%;
+}
+.terms-table td:not(:first-child) {
+    background-color: white;
+}
+.terms-table span {
+    color: #4cb57b;
+    font-weight: bold;
+}
+/* 施術報告書交付料 */
+.grant-fee-text {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 5rem;
+}
+@media screen and (max-width: 768px) {
+    .self-pay {
+        flex-direction: column;
+    }
+    .self-pay div {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .health-insurance-table, .terms-table {
+        width: 70%;
+    }
+}

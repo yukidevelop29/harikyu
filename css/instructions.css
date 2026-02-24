@@ -1,0 +1,28 @@
+#sec02 {
+    border-top:  2px solid #337d98;
+    border-bottom:  2px solid #337d98;
+    background-color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    color: #337d98;
+}
+.compatible-area {
+    color: #337d98;
+    text-align: center;
+}
+.free-trial-information-image {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.free-trial-information-text {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+    .free-trial-information-image {
+        width: 100vw;
+    }
+}
